@@ -4,8 +4,8 @@ def nyc_pigeon_organizer(data)
   new_data = {}
   names.each do |name|
     new_data[name] = {}
-    puts data[:color].values
   end
+  puts data[:color].values
 end
 
 # pigeon_list = {
