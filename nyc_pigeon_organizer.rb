@@ -1,6 +1,11 @@
 def nyc_pigeon_organizer(data)
   # write your code here!
-  puts data[:gender].values
+  names = data[:gender].values
+  new_data = {}
+  names.each do |name|
+    new_data[name] = {}
+    puts data[:color].values
+  end
 end
 
 # pigeon_list = {
