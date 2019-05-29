@@ -1,7 +1,6 @@
 def nyc_pigeon_organizer(data)
   # write your code here!
-  pigeon_names = data.values
-  puts pigeon_names
+  puts data[gender]
 end
 
 # pigeon_list = {
