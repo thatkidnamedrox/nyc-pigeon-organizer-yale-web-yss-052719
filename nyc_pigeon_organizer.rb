@@ -15,6 +15,17 @@ def nyc_pigeon_organizer(data)
       end
     end
 
+    data[:gender].each do |gender, array|
+      if array.any? {|e| e == name}
+        new_data[name][:gender] << gender
+      end
+    end
+
+    data[:lives].each do |place, array|
+      if array.any? {|e| e == name}
+        new_data[name][:lives] << place
+      end
+    end
 
 
   end
