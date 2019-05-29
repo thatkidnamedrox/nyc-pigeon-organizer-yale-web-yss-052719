@@ -31,6 +31,7 @@ def nyc_pigeon_organizer(data)
   end
   puts new_data.inspect
   #puts data[:color].values.inspect
+  new_data
 end
 
 # pigeon_list = {
