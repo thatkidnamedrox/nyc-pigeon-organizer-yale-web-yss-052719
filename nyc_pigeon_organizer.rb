@@ -5,14 +5,17 @@ def nyc_pigeon_organizer(data)
 
   pigeon_names.each do |name|
     new_data[name] = {}
-
     new_data[name][:color] = []
+    new_data[name][:gender] = []
+    new_data[name][:lives] = []
+    
     data[:color].each do |color, array|
-      #puts array.inspect
       if array.any? {|e| e == name}
         new_data[name][:color] << color
       end
     end
+
+    
 
   end
   puts new_data.inspect
