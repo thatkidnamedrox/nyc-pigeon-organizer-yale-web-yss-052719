@@ -11,19 +11,19 @@ def nyc_pigeon_organizer(data)
 
     data[:color].each do |color, array|
       if array.any? {|e| e == name}
-        new_data[name][:color] << color
+        new_data[name][:color] << color.to_s
       end
     end
 
     data[:gender].each do |gender, array|
       if array.any? {|e| e == name}
-        new_data[name][:gender] << gender
+        new_data[name][:gender] << gender.to_s
       end
     end
 
     data[:lives].each do |place, array|
       if array.any? {|e| e == name}
-        new_data[name][:lives] << place
+        new_data[name][:lives] << place.to_s
       end
     end
 
