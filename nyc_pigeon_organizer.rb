@@ -2,11 +2,13 @@ def nyc_pigeon_organizer(data)
   # write your code here!
   pigeon_names = data[:gender].values.flatten
   new_data = {}
+  
   pigeon_names.each do |name|
     new_data[name] = {}
+    
+    new_data[name][:color] = []
     data[:color].each do |color, array|
       #puts array.inspect
-      new_data[name][:color] = []
       if array.any? {|e| e == name}
         new_data[name][:color] << color
       end
